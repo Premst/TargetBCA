@@ -8,7 +8,6 @@
     outline: none;
     border: none;
     text-decoration: none;
-    text-transform: capitalize;
     transition: all .2s linear;
 }
 
@@ -28,14 +27,15 @@ html {
 }
 
 body {
-    color: black;
+    color: #130f40;
     background-color: white;
 }
 
 .dark-mode {
-    background-color:  #282C35;
+    background-color: #282C35;
     color: white;
 }
+
 
 span {
     color: var(--orange);
@@ -97,17 +97,18 @@ ul li:hover ul.dropdown {
     /* margin-right: 50vw; */
 }
 
-.dropdown1{
+.dropdown1 {
     display: none;
 }
 
-ul.dropdown li:hover .dropdown1{
+
+ul.dropdown li:hover .dropdown1 {
     display: block;
     width: 130px;
     position: absolute;
     left: 150px;
     top: 0;
-    background:orange;
+    background: orange;
     border-radius: 5px;
     box-shadow: var(--box-shadow);
 }
@@ -208,7 +209,8 @@ ul.dropdown li:hover .dropdown1{
 }
 
 
-/* home */
+/* ------------------home section------------ */
+
 .home {
     margin-bottom: 30px;
 }
@@ -218,11 +220,11 @@ ul.dropdown li:hover .dropdown1{
     flex-flow: row-reverse;
 }
 
-.home-content .image1 {
+/* .home-content .image1 {
     position: absolute;
     bottom: 0vh;
     left: 25vw;
-}
+} */
 
 /* .home-content .image1 img {
   width: 8vw;
@@ -302,6 +304,87 @@ ul.dropdown li:hover .dropdown1{
 }
 
 
+/* -----------------about section ------------------ */
+
+.about {
+    margin-top: 200px;
+}
+
+.bca_info {
+    display: flex;
+    margin: 0 100px;
+    margin-top: 20px;
+    margin-left: 150px;
+}
+
+.bca_info .info {
+    margin-top: 20px;
+    margin-left: 150px;
+}
+
+.about_info {
+    display: flex;
+    flex-flow: row-reverse;
+    margin: 0 50px;
+    margin-top: 50px;
+    margin-right: 200px;
+}
+
+.about_info .info {
+    margin-top: 50px;
+    margin-right: 200px;
+}
+
+
+
+
+/* .bca_info .image, .about_info .image{
+    width: 5vw;
+} */
+
+.about h2 {
+    font-size: 50px;
+}
+
+.about p {
+    font-size: 20px;
+}
+
+/* .about_info .image{
+    background-color: green;
+}
+.bca_info .image{
+    background-color: green;
+} */
+.about .image {
+    /* background-color: green; */
+    margin: 0 20px;
+    padding-top: 0px;
+    /* width: 50%; */
+}
+
+
+.about img {
+    /* margin: 60px 150px; */
+    /* margin-bottom: 0; */
+    width: 25vw;
+    /* background: red; */
+    margin: 0;
+    padding: 0;
+}
+
+.about .info {
+    width: 50%;
+    /* padding-left: 50px; */
+    /* padding-top: 100px; */
+    /* background-color: rebeccapurple; */
+    /* margin-top: 50px; */
+    /* margin-left: 80px;
+    margin-right: 80px; */
+    margin: 0px 80px;
+    /* padding-left: 30px; */
+    /* padding-top: 80px; */
+}
 
 
 /* media queries  */
@@ -331,10 +414,6 @@ ul.dropdown li:hover .dropdown1{
         font-size: 18px;
     }
 
-    .image img {
-        width: 38vw;
-        margin-top: 25vh;
-    }
 }
 
 @media (max-width:1024px) {
@@ -353,6 +432,14 @@ ul.dropdown li:hover .dropdown1{
     .home .home-content button {
         font-size: 16px;
     }
+
+    .about h2 {
+        font-size: 40px;
+    }
+
+    .about p {
+        font-size: 15px;
+    }
 }
 
 @media (max-width:991px) {
@@ -363,6 +450,14 @@ ul.dropdown li:hover .dropdown1{
 
     section {
         padding: 2rem;
+    }
+
+    .about h2 {
+        font-size: 40px;
+    }
+
+    .about p {
+        font-size: 15px;
     }
 
 }
@@ -396,10 +491,35 @@ ul.dropdown li:hover .dropdown1{
         padding-top: 1vh;
     }
 
-    .image img {
-        margin-left: 25vw;
+    .home-content .image img {
+        margin-left: 30vw;
         width: 45vw;
-        padding-top: 8vh;
+        margin-top: 15vh;
+    }
+
+    .about h2 {
+        font-size: 40px;
+    }
+
+    .about p {
+        font-size: 13px;
+    }
+
+    .about img {
+        margin-bottom: 0;
+        width: 25vw;
+    }
+
+    .bca_info img {
+        margin-top: 5vh;
+    }
+
+    .about_info img{
+        margin-top: 2vh;
+    }
+
+    .about .info {
+        margin: 0px 20px;
     }
 }
 
@@ -446,13 +566,13 @@ ul.dropdown li:hover .dropdown1{
         padding: 5px 0px;
     }
 
-   
-    ul.dropdown li:hover .dropdown1{
+
+    ul.dropdown li:hover .dropdown1 {
         display: block;
         position: absolute;
         /* left: -110px; */
         top: 0px;
-        background:white;
+        background: white;
         border-radius: 5px;
         border: 2px solid orange;
         box-shadow: var(--box-shadow);
@@ -481,13 +601,15 @@ ul.dropdown li:hover .dropdown1{
         background: blue;
         color: #fff;
     }
-    .image img {
+
+
+    .home-content .image img {
         text-align: center;
         width: 50vw;
         margin-top: 10vh;
         /* background-color: yellow; */
     }
-    
+
     .home-content .info {
         /* background-color: rebeccapurple; */
         margin-top: 100px;
@@ -496,6 +618,10 @@ ul.dropdown li:hover .dropdown1{
         margin-left: 20px;
         margin-right: 20px;
     }
+    .about .info {
+        margin: 0px 10px;
+    }
+  
 
 }
 
@@ -503,6 +629,39 @@ ul.dropdown li:hover .dropdown1{
     .max-width {
         padding: 0 2vw;
     }
+
+    .bca_info, .about_info{
+        display: block;
+        margin: 0;
+        padding: 0;
+    }
+    .about_info{
+        margin-top: 100px;
+    }
+    .about .info{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .about .image{
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+    .about h2{
+        text-align: center;
+        font-size: 30px;
+    }
+    .about p{
+        font-size: 15px;
+    }
+    
+    .about img {
+        width: 35vw;
+    }
+
+    
+    
 }
 
 @media (max-width:480px) {
@@ -522,6 +681,7 @@ ul.dropdown li:hover .dropdown1{
     .footer .box-container .box .payment-img {
         margin: 2rem auto;
     }
+
     .home .home-content .text-1 {
         font-size: 40px;
     }
@@ -538,11 +698,14 @@ ul.dropdown li:hover .dropdown1{
         font-size: 15px;
     }
 
-    .image img {
+    .home-content .image img {
         width: 70vw;
         margin-left: 40px;
         margin-right: 40px;
         margin-top: 10vh;
+    }
+    .about img {
+        width: 50vw;
     }
 
 }
