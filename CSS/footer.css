@@ -1,0 +1,158 @@
+/* *{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:lavender;
+} */
+/* .header{
+    text-align: center;
+    pad: 32px;
+    background-color: aqua;
+    margin-top: 0;
+    padding:5px;
+    color: orange;
+} */
+.footer{
+    margin-top: 50px;
+    font-size: 15px;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    text-align: center;
+}
+.column{
+    flex: 25%;
+    max-width: 25%;
+    /* padding: 0 4px; */
+}
+.column h3{
+    margin-top: 20px;
+}
+
+.column ul{
+    list-style: none;
+}
+.row .column li{
+    /* margin-top: 5px; */
+    display:grid;
+}
+.row .column li i{
+    color:blue;
+}
+
+.row .column li a{
+    color: #666;
+}
+.row .column li a:hover{
+    color: orange;
+    text-decoration: underline;
+    padding-left: 1.5rem;
+}
+.column li{
+    position: relative;
+    display: inline-block;
+  }
+  .dropdown3{
+    display:none ;  
+    z-index: 999;
+    background:#fff;
+    border-radius: 5px;
+    box-shadow: var(--box-shadow);  
+  }
+  .dropdown3 li{
+    color: crimson;
+    margin: 0;
+    padding: 5px 0px;
+    border: 1px solid orange;
+    /* border-radius: 0; */
+
+  }
+  ul.dropdown2 li:hover .dropdown3{
+    display: block;
+    width: 130px;
+    position:absolute;
+    left: 250px;    
+    top: 20px;
+  }
+
+
+
+.footer .credit{
+    text-align: center;
+    margin-top: 2rem;
+    padding:1rem;
+    padding-top: 2.5rem;
+    font-size: 2rem;
+}
+.footer .credit p{
+    color: #666;
+    font-size: 10px;
+}
+
+.footer .credit span{
+    color:var(--orange);
+}
+
+@media (max-width:1280px){
+
+    ul.dropdown2 li:hover .dropdown3{
+        left: 220px;    
+        top: 20px;
+      }
+}
+
+@media (max-width:1024px) {
+    ul.dropdown2 li:hover .dropdown3{
+        left: 80px;    
+        top: 40px;
+      }
+}
+
+
+@media(max-width:800px){
+    .column{
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+
+@media(max-width:600px){
+    .column{
+        flex: 100%;
+        max-width: 100%;
+    }
+    ul.dropdown2 li:hover .dropdown3{
+        left: 330px;    
+        top: 35px;
+      }
+}
+
+@media (max-width:480px){
+    ul.dropdown2 li:hover .dropdown3{
+        left: 280px;    
+        top: 20px;
+      }
+}
+@media (max-width:450px){
+    ul.dropdown2 li:hover .dropdown3{
+        left: 250px;    
+        top: 20px;
+      }
+}
+@media (max-width:400px){
+    ul.dropdown2 li:hover .dropdown3{
+        left: 240px;    
+        top: 20px;
+      }
+}
+@media (max-width:380px){
+    ul.dropdown2 li:hover .dropdown3{
+        left: 220px;    
+        top: 20px;
+      }
+}
