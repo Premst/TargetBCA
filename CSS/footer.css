@@ -39,6 +39,8 @@ body{
 .row .column li{
     /* margin-top: 5px; */
     display:grid;
+    cursor: pointer;
+
 }
 .row .column li i{
     color:blue;
@@ -46,6 +48,7 @@ body{
 
 .row .column li a{
     color: #666;
+    cursor: pointer;
 }
 .row .column li a:hover{
     color: orange;
@@ -68,6 +71,8 @@ body{
     margin: 0;
     padding: 5px 0px;
     border: 1px solid orange;
+    cursor: pointer;
+
     /* border-radius: 0; */
 
   }
@@ -79,23 +84,131 @@ body{
     top: 20px;
   }
 
+  /* about me and msg section  */
+
+.contact_info{
+    display: flex;
+    margin-top: 50px;
+    
+}
+
+.about_me{
+    width: 50%;
+    text-align: center;
+    /* background: yellow; */
+    margin: 0 40px;
+
+}
+.about_me h2{
+    font-size: 30px;
+}
+.about_me h3{
+    font-size: 20px;
+}
+.about_me p{
+    font-size: 15px;
+    margin: 10px 50px;
+}
+.contact-icon{
+    margin-top: 10px;
+    font-size: 30px;
+   
+}
+.contact-icon a{
+    padding: 0 10px;
+    text-decoration: none;
+    color: #666;
+    transition: all 0.3s linear;
+}
+
+.contact-icon a:hover {
+    transform: scale(1.5);
+}
+.fa-instagram:hover{
+    color: #e11d74;
+}
+.fa-linkedin:hover {
+    color: #04009a;
+}
+.fa-whatsapp:hover {
+    color: green;
+}
+.fa-twitter:hover {
+    color: #00adb5;
+}
+
+.about_image img{
+    margin-top: 30px;
+    width: 150px;
+    border-radius: 50%;
+    /* border: 5px solid #cbcaca; */
+    border: 5px solid #eee;
+}
+
+strong{
+    color: crimson;
+}
+
+/* sheet  */
+
+.msg{
+    width: 50%;
+    margin: 0 40px;
+    padding: 30px;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    background-color: #15114c;
+}
+h4{
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: white;
+}
+.msg p{
+    font-size: 15px;
+    margin-bottom: 10px;
+    color: green;
+}
+input{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+textarea{
+    width: 100%;
+    padding: 10px;
+}
+#submit{
+    border: none;
+    background-color: orangered;
+    color: white;
+    width: 200px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+#submit:hover{
+    background-color: green;
+}
+/* footer end section  */
 
 
-.footer .credit{
+.footer1 .credit{
     text-align: center;
     margin-top: 2rem;
     padding:1rem;
     padding-top: 2.5rem;
     font-size: 2rem;
 }
-.footer .credit p{
+.footer1 .credit p{
     color: #666;
     font-size: 10px;
 }
 
-.footer .credit span{
+.footer1 .credit span{
     color:var(--orange);
 }
+
+/* responsivness */
 
 @media (max-width:1280px){
 
@@ -112,6 +225,28 @@ body{
       }
 }
 
+@media (max-width:991px){
+    .contact_info{
+        display: block;
+        /* text-align: center; */
+    }
+    .about_me{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 50px;
+        margin-left: 0px;
+        /* margin: 0 50px; */
+    }
+    .msg{
+        /* margin-top:100px; */
+        width:90%;
+        margin: auto;
+        /* margin-right:200px; */
+    }
+    /* .about_me p{
+        margin: 10px 80px;
+    } */
+}
 
 @media(max-width:800px){
     .column{
